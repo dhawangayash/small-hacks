@@ -3,7 +3,7 @@ from flask import Response
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/track', methods=['GET', 'POST'])
+@app.route('/api/v2/cache/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         payload = request.data
